@@ -4,6 +4,9 @@
   "description": "Potential webpage for the Grid cyber Lounge.",
   "main": "index.js",
   "scripts": {
+    "sass:watch": "sass --watch scss:css",
+   "server": "browser-sync start --server --files css index.html scripts",
+   "start": "concurrently 'npm run sass:watch' 'npm run server'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
