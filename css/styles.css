@@ -2,6 +2,15 @@ body {
   margin: 0 !important;
   padding: 0 !important; }
 
+.director {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -8vh;
+  z-index: 9;
+  font-size: 3.5vw;
+  color: white; }
+
 .navbar {
   background-color: transparent;
   position: absolute !important;
@@ -27,6 +36,9 @@ button.navbar-toggler {
   height: 100%;
   background-size: cover;
   background-position: center; }
+
+.carousel-indicators {
+  bottom: 8vh !important; }
 
 .games-list, .price-chart-1 {
   height: 100vh; }

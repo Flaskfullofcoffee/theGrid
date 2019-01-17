@@ -4,6 +4,16 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+.director {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -8vh;
+  z-index: 9;
+  font-size: 3.5vw;
+  color: white;
+}
+
 
 // NAV SETTINGS
 .navbar {
@@ -36,6 +46,10 @@ button.navbar-toggler {
   background-size: cover;
   background-position: center;
 }
+.carousel-indicators {
+  bottom: 8vh !important;
+}
+
 
 // GAME LIST SETTINGS
 
