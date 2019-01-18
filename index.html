@@ -54,56 +54,61 @@
     </section>
     <section class="container-fluid games-list"> <!-- games section -->
       <div class="row">
-        <div class="col-md card card-1">
+        <div class="col-xs-12 col-md-6 col-lg card-1">
           <h2 class="text-center ">Our<br />Games</h2>
           <hr>
           <button class="btn btn-primary" type="button" name="button">View more</button>
         </div>
-        <div class="col-md card card-2">
+        <div class="col-xs-12 col-md-6 col-lg card-2">
 
         </div>
-        <div class="col-md card card-3">
+        <div class="col-xs-12 col-md-6 col-lg card-3">
 
         </div>
-        <div class="col-md card card-4">
+        <div class="col-xs-12 col-md-6 col-lg card-4">
 
         </div>
       </div>
       <div class="row">
-        <div class="col-md card card-5">
+        <div class="col-xs-12 col-md-6 col-lg card-5">
 
         </div>
-        <div class="col-md card card-6">
+        <div class="col-xs-12 col-md-6 col-lg card-6">
 
         </div>
-        <div class="col-md card card-7">
+        <div class="col-xs-12 col-md-6 col-lg card-7">
 
         </div>
-        <div class="col-md card card-8">
+        <div class="col-xs-12 col-md-6 col-lg card-8">
 
         </div>
       </div>
     </section>
-    <section> <!-- pricing section -->
-      <div id="carousel-price-chart" class="carousel slide" data-interval="false" data-ride="carousel">
-        <h1 class="text-center">TEST</h1>
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-price-chart" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-price-chart" data-slide-to="1"></li>
-          <li data-target="#carousel-price-chart" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox"">
-          <h2 class="text-center">Hourly</h2>
-          <div class="carousel-item active justify-content-center price-list">
-            <div class="price-card">
+    <section class="prices"> <!-- pricing section -->
+      <h2 class="text-center">Pricing</h2>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hourlyCollapse" aria-expanded="true" aria-controls="hourlyCollapse">Hourly</button>
 
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bingeCollapse" aria-expanded="false" aria-controls="hourlyCollapse">Binge</button>
+
+      <div class="accordion" id="collapseTest">
+        <div class="row">
+          <div class="col">
+            <div class="collapse show" id="hourlyCollapse" data-parent="#collapseTest">
+              <h2>Hourly</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="price-card">
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="collapse" id="bingeCollapse" data-parent="#collapseTest">
+              <h2>Binge</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
         </div>
       </div>
+
     </section>
     <section> <!-- reservations section -->
 
