@@ -11,6 +11,17 @@ body {
   font-size: 3.5vw;
   color: white; }
 
+ul {
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none; }
+
+.global-btn {
+  padding: 10px 30px;
+  border-radius: 30px !important;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00c9db 0%, #0099d6 100%); }
+
 .navbar {
   background-color: transparent;
   position: absolute !important;
@@ -43,9 +54,6 @@ button.navbar-toggler {
 .games-list, .price-chart-1 {
   height: 100vh; }
 
-.row {
-  height: 50%; }
-
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
   min-height: 50vh !important; }
 
@@ -55,18 +63,14 @@ button.navbar-toggler {
 .card-3, .card-6, .card-8 {
   background-image: url("https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); }
 
-.price-list {
-  display: flex !important;
-  flex-direction: row; }
+.prices h2 {
+  margin-top: 25vh; }
 
-.price-card {
-  height: 80vh;
-  width: 25vw;
-  margin: 5vh 15vh;
-  background-color: grey;
-  border-radius: 8px; }
+.price-categories {
+  text-align: center; }
 
-.prices {
-  height: 100vh; }
+.price-categories button {
+  margin: 0 1.5vw;
+  padding: 1.5vw 3.5vw; }
 
 /*# sourceMappingURL=styles.css.map */
