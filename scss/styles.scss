@@ -19,6 +19,7 @@ ul {
   text-decoration: none;
 }
 .global-btn {
+  text-align: center;
   padding: 10px 30px;
   border-radius: 30px !important;
   text-transform: uppercase;
@@ -32,12 +33,18 @@ h2:after {
   width: 20vw;
   background: #00c9db;
 }
+.section-header {          // Need to change font size & family
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
 
 // NAV SETTINGS
+
 .navbar {
   background-color: transparent;
   position: absolute !important;
-  top: 2.5vh;
+  top: 5vh;
+  left: -.5vh;
   margin-left: 90%;
   z-index: 9;
 }
@@ -71,11 +78,15 @@ button.navbar-toggler {
 
 // GAME LIST SETTINGS
 
-.games-list, .price-chart-1 {
+.games-btn {
+  // align-self: center;
+}
+.games-list {
   height: 100vh;
+  position: relative;
 }
 .row {
-  // height: 50%;
+  height: 50%;
 }
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
   min-height: 50vh !important;
@@ -91,10 +102,8 @@ button.navbar-toggler {
 // PRICE SETTINGS
 .prices {
   height: 150vh;
-}
-.price-header {          // Need to change font size & family
-  margin-top: 20vh;
-  margin-bottom: 5vh;
+  position: relative;
+  top: 5vh;
 }
 .price-title {
   margin: 5vh 0 12vh;
@@ -134,4 +143,48 @@ button.navbar-toggler {
 }
 .hourly {
   margin-top: 2.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+@media (max-width: 991.98px) {
+  .navigator {
+    margin-left: 87%;
+    .navbar-toggler {
+      font-size: 3vw;
+    }
+  }
+  .games-list {
+    height: 200vh;
+  }
+  .price-card {
+    margin-top: 5vh;
+  }
 }

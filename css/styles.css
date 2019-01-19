@@ -17,6 +17,7 @@ ul {
   text-decoration: none; }
 
 .global-btn {
+  text-align: center;
   padding: 10px 30px;
   border-radius: 30px !important;
   text-transform: uppercase;
@@ -30,10 +31,15 @@ h2:after {
   width: 20vw;
   background: #00c9db; }
 
+.section-header {
+  margin-top: 10vh;
+  margin-bottom: 5vh; }
+
 .navbar {
   background-color: transparent;
   position: absolute !important;
-  top: 2.5vh;
+  top: 5vh;
+  left: -.5vh;
   margin-left: 90%;
   z-index: 9; }
 
@@ -59,8 +65,12 @@ button.navbar-toggler {
 .carousel-indicators {
   bottom: 8vh !important; }
 
-.games-list, .price-chart-1 {
-  height: 100vh; }
+.games-list {
+  height: 100vh;
+  position: relative; }
+
+.row {
+  height: 50%; }
 
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
   min-height: 50vh !important; }
@@ -72,11 +82,9 @@ button.navbar-toggler {
   background-image: url("https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); }
 
 .prices {
-  height: 150vh; }
-
-.price-header {
-  margin-top: 20vh;
-  margin-bottom: 5vh; }
+  height: 150vh;
+  position: relative;
+  top: 5vh; }
 
 .price-title {
   margin: 5vh 0 12vh; }
@@ -115,5 +123,17 @@ button.navbar-toggler {
 
 .hourly {
   margin-top: 2.5vh; }
+
+@media (max-width: 991.98px) {
+  .navigator {
+    margin-left: 87%; }
+    .navigator .navbar-toggler {
+      font-size: 3vw; }
+
+  .games-list {
+    height: 200vh; }
+
+  .price-card {
+    margin-top: 5vh; } }
 
 /*# sourceMappingURL=styles.css.map */
