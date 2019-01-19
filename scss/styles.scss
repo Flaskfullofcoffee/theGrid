@@ -24,6 +24,14 @@ ul {
   text-transform: uppercase;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
 }
+h2:after {
+  content: "";
+  display: block;
+  margin: 2vh auto;
+  height: .5vh;
+  width: 20vw;
+  background: #00c9db;
+}
 
 // NAV SETTINGS
 .navbar {
@@ -80,9 +88,16 @@ button.navbar-toggler {
 }
 
 
-// PRICING SETTINGS
-.prices h2 {          // Need to change font size & family
-  margin-top: 25vh;
+// PRICE SETTINGS
+.prices {
+  height: 150vh;
+}
+.price-header {          // Need to change font size & family
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
+.price-title {
+  margin: 5vh 0 12vh;
 }
 .price-categories {
   text-align: center;
@@ -90,4 +105,33 @@ button.navbar-toggler {
 .price-categories button {
   margin: 0 1.5vw;
   padding: 1.5vw 3.5vw;
+}
+.priceboard {
+  height: 100%;
+}
+.price-card {
+  height: 85vh;
+  background: #f2f5fa;
+  border-radius: 8px;
+}
+.price-card-center {
+  height: 100vh;
+  margin: -7vh 0;
+  border: 6px solid grey;
+  background: #fff;
+}
+.price-card-center > .price-info {
+  background: #fff !important;
+}
+.price-info {
+  height: 95%;
+  background-color: #f2f5fa !important;
+  border: none !important;
+}
+// PRICE SETTINGS: HOURLY
+.price-title::after {
+  display: none;
+}
+.hourly {
+  margin-top: 2.5vh;
 }
