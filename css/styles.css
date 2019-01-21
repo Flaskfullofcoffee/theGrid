@@ -45,20 +45,21 @@ h2:after {
 
 button.navbar-toggler {
   border: none;
-  font-size: 2.5vw; }
+  font-size: 2vw; }
 
 .intro {
   height: 100vh; }
 
 .carousel {
-  height: 100%; }
+  height: 100vh; }
 
 .carousel-inner {
-  height: 100%;
+  height: 100vh;
   background-color: tomato; }
 
 .carousel-item > img {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center; }
 
@@ -124,16 +125,44 @@ button.navbar-toggler {
 .hourly {
   margin-top: 2.5vh; }
 
+.callUs {
+  font-size: 2.5vw; }
+
 @media (max-width: 991.98px) {
   .navigator {
-    margin-left: 87%; }
-    .navigator .navbar-toggler {
-      font-size: 3vw; }
+    margin-left: 88%; }
+    .navigator .navbar-toggler-icon {
+      font-size: 2.5vw; }
+
+  .director {
+    font-size: 4.5vw; }
 
   .games-list {
     height: 200vh; }
 
   .price-card {
-    margin-top: 5vh; } }
+    margin: 5vh 0; }
+
+  .price-card-center {
+    margin: -2.5vh 0; } }
+@media (max-width: 767.98px) {
+  .navigator {
+    margin-left: 85%; }
+    .navigator .navbar-toggler-icon {
+      font-size: 3vw; }
+
+  .director {
+    font-size: 6.5vw; }
+
+  .games-list {
+    height: 400vh; }
+
+  .price-categories button {
+    margin: 1.5vh; } }
+@media (max-width: 575.98px) {
+  .navigator {
+    margin-left: 75%; }
+    .navigator .navbar-toggler {
+      font-size: 7.5vw; } }
 
 /*# sourceMappingURL=styles.css.map */
