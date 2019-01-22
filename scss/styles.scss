@@ -102,9 +102,10 @@ button.navbar-toggler {
 
 // PRICE SETTINGS
 .prices {
-  height: 150vh;
-  position: relative;
-  top: 5vh;
+  height: 200vh;
+  // position: relative;
+  // top: -10vh;
+  padding-top: 10vh;
 }
 .price-title {
   margin: 5vh 0 12vh;
@@ -150,16 +151,64 @@ button.navbar-toggler {
 }
 
 
+// RESERVATION SETTINGS
+
+.reservations {
+  height: 100vh;
+}
+.res-info {
+  margin-top: 15vh;
+}
+.res-info h2 {
+  font-size: 4vw;
+  position: relative;
+  top: -2.5vh;
+}
+.res-form {
+  position: relative;
+  top: -12vh;
+}
+.form-wrapper.card{
+  height: 85vh;
+  border: 1px solid #f2f5fa;
+  background-color: #f2f5fa
+}
+.form-wrapper label, .form-wrapper input {
+  margin: 2.5vh 0;
+}
+.form-content {
+  position: relative;
+  top: vh;
+}
+.res-header {
+  padding: 4vh 0;
+  background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
+}
+.col-form-label {
+  font-size: 1.5vw !important;
+}
+
+
+// CONTACT SETTINGS
+.contact {
+  height: 100vh;
+}
 
 
 
-
-
-
-
-
-
-
+// BACKGROUND WRAPPER DECLARATION TAB
+.games-list {
+  background-color: pink;
+}
+.prices {
+  background-color: indigo;
+}
+.reservations {
+  background-color: tomato;
+}
+.contact {
+  background-color: violet;
+}
 
 
 
