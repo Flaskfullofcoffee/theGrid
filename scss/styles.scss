@@ -1,4 +1,10 @@
 // GLOBAL SETTINGS
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}};
+
+
+
 
 body {
   margin: 0 !important;
@@ -12,6 +18,8 @@ body {
   z-index: 9;
   font-size: 3.5vw;
   color: white;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
 ul {
   list-style-type: none;
@@ -20,7 +28,7 @@ ul {
 }
 .global-btn {
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 30px !important;
   border-radius: 30px !important;
   text-transform: uppercase;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
@@ -34,8 +42,11 @@ h2:after {
   background: #00c9db;
 }
 .section-header {          // Need to change font size & family
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 5vh;
+  font-size: 3vw;
+  font-family: 'Righteous', cursive;
+  color: #fff;
 }
 
 // NAV SETTINGS
@@ -54,11 +65,37 @@ h2:after {
   margin-left: 90%;
   z-index: 9;
 }
+
 button.navbar-toggler {
   border: none;
   font-size: 2vw;
 }
-
+a.nav-link {
+  font-size: 1.75vw;
+  color: #fff !important;
+}
+a.nav-link:active {
+  text-align:center;
+  padding-bottom:5px;
+  background: /* gradient can be an image */
+    linear-gradient(to right, #00c9db 0%, #0099d6 100%)
+    left
+    bottom
+    transparent
+    no-repeat;
+  background-size:100% 5px ;
+}
+a.nav-link:hover {
+  text-align:center;
+  padding-bottom:5px;
+  background: /* gradient can be an image */
+    linear-gradient(to right, #00c9db 0%, #0099d6 100%)
+    left
+    bottom
+    transparent
+    no-repeat;
+  background-size:100% 5px ;
+}
 
 // CAROUSEL SETTINGS
 
@@ -70,7 +107,6 @@ button.navbar-toggler {
 }
 .carousel-inner {
   height: 100vh;
-  // background-color: tomato;
 }
 .overlay {
     position: absolute;
@@ -78,17 +114,36 @@ button.navbar-toggler {
     height: 100%;
     z-index: 2;
     background: rgb(11,1,0);
-    background: linear-gradient(90deg, rgba(11,1,0,1) 10%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(255,255,255,0) 100%);
     opacity: .7;
 }
 .carousel-item > img {
   height: 100vh;
   width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .carousel-indicators {
   bottom: 8vh !important;
+}
+// CAROUSEL SETTINGS: SLIDES
+
+.slide-content {
+  position: absolute;
+  top: 35vh;
+  left: 15vw;
+  color: #fff;
+  z-index: 9;
+}
+.slide-content h3 {
+  font-size: 4vw;
+  font-family: 'Righteous', cursive;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.slide-content p {
+  font-size: 1.25vw;
 }
 
 
@@ -113,7 +168,36 @@ button.navbar-toggler {
 .card-3, .card-6, .card-8 {
   background-image: url("https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 }
-
+.card-2 {
+  background-image: url('/images/1A-2-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-3 {
+  background-image: url('/images/2A-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-4 {
+  background-image: url('/images/3A-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-5 {
+  background-image: url('/images/4A-1-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-6 {
+  background-image: url('/images/5A-1-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-7 {
+  background-image: url('/images/6A-2-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 // PRICE SETTINGS
 .prices {
@@ -213,7 +297,7 @@ button.navbar-toggler {
 
 // BACKGROUND WRAPPER DECLARATION TAB
 .games-list {
-  background-color: pink;
+  background-color: #1e283c;
 }
 .prices {
   background-color: indigo;
