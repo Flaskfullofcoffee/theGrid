@@ -1,25 +1,28 @@
 // GLOBAL SETTINGS
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-
-@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}};
-
-
+// ARROW ANIMATION
+@-webkit-keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}}@keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}};
+// BUTTON ON-FOCUS ANIMATION
+@-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}};
 
 
 body {
   margin: 0 !important;
   padding: 0 !important;
 }
-.director {
+.arrow-wrapper {
   display: flex;
   justify-content: center;
   position: relative;
   top: -8vh;
+  font-size: 4vw;
+  overflow: hidden;
+}
+.arrow {
   z-index: 9;
-  font-size: 3.5vw;
   color: white;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: ping 0.8s ease-in-out infinite both;
+	animation: ping 0.8s ease-in-out infinite both;
 }
 ul {
   list-style-type: none;
@@ -32,6 +35,15 @@ ul {
   border-radius: 30px !important;
   text-transform: uppercase;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
+  box-shadow: none !important;
+}
+.global-btn:focus {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+.active {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
 }
 h2:after {
   content: "";
@@ -42,10 +54,12 @@ h2:after {
   background: #00c9db;
 }
 .section-header {          // Need to change font size & family
-  margin-top: 15vh;
-  margin-bottom: 5vh;
-  font-size: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  font-size: 5vw;
+  letter-spacing: 3px;
   font-family: 'Righteous', cursive;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -202,19 +216,28 @@ a.nav-link:hover {
 // PRICE SETTINGS
 .prices {
   height: 200vh;
-  // position: relative;
-  // top: -10vh;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 20%;
   padding-top: 10vh;
 }
 .price-title {
   margin: 5vh 0 12vh;
+  color: #fff;
+  font-size: 3vw;
 }
 .price-categories {
   text-align: center;
+  margin-bottom: 15vh;
 }
 .price-categories button {
-  margin: 0 1.5vw;
+  // margin: 0 1.5vw;
   padding: 1.5vw 3.5vw;
+}
+.accordion {
+  margin: 10vh 0 25vh;
 }
 .priceboard {
   height: 100%;
@@ -222,12 +245,13 @@ a.nav-link:hover {
 .price-card {
   height: 85vh;
   background: #f2f5fa;
+  opacity: .95;
   border-radius: 8px;
 }
 .price-card-center {
   height: 100vh;
   margin: -7vh 0;
-  border: 6px solid grey;
+  border: 6px solid #00c9db;
   background: #fff;
 }
 .price-card-center > .price-info {
@@ -236,9 +260,10 @@ a.nav-link:hover {
 .price-info {
   height: 95%;
   background-color: #f2f5fa !important;
+  opacity: .75;
   border: none !important;
 }
-// PRICE SETTINGS: HOURLY
+// PRICE SETTINGS: CARDS
 .price-title::after {
   display: none;
 }
@@ -247,8 +272,33 @@ a.nav-link:hover {
 }
 .callUs {
   font-size: 2.5vw;
+  color: #fff;
 }
-
+.callUs span {
+  color: #00c9db;
+}
+.price-info h3 {
+  color: black;
+  font-size: 5vw;
+  margin-top: 5vh;
+}
+.price-info p {
+  margin: 0;
+  font-size: 1.5vw;
+}
+.cost {
+  margin-bottom: 2vh !important;
+  opacity: .5;
+  font-size: 5vw !important;
+}
+.card > hr {
+  margin-right: 75px !important;
+  margin-left: 75px !important;
+}
+.descriptor {
+  margin-top: 2.5vh !important;
+  font-size: 2vw;
+}
 
 // RESERVATION SETTINGS
 
@@ -299,9 +349,9 @@ a.nav-link:hover {
 .games-list {
   background-color: #1e283c;
 }
-.prices {
-  background-color: indigo;
-}
+// .prices {
+//   background-color: indigo;
+// }
 .reservations {
   background-color: tomato;
 }
