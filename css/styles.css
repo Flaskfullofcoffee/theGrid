@@ -143,8 +143,11 @@ a.nav-link:hover {
   background: linear-gradient(90deg, black 22%, rgba(255, 255, 255, 0) 100%);
   opacity: .7; }
 
+.carousel-item {
+  height: 100vh; }
+
 .carousel-item > img {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,35 +353,101 @@ a.nav-link:hover {
     .navigator .navbar-toggler-icon {
       font-size: 2.5vw; }
 
-  .director {
-    font-size: 4.5vw; }
+  .arrow-wrapper {
+    font-size: 8.5vw; }
 
   .games-list {
     height: 200vh; }
+
+  .games-list .section-header {
+    margin-top: 10vh !important;
+    font-size: 7vw; }
+
+  .prices {
+    height: auto;
+    background-attachment: scroll; }
 
   .price-card {
     margin: 5vh 0; }
 
   .price-card-center {
-    margin: -2.5vh 0; } }
+    margin: -2.5vh 0; }
+
+  .price-info p {
+    font-size: 3vw; }
+
+  .callUs {
+    position: relative;
+    bottom: 18vh;
+    font-size: 4vw; }
+
+  .descriptor {
+    font-size: 3vw !important; } }
 @media (max-width: 767.98px) {
   .navigator {
-    margin-left: 85%; }
+    margin-left: 85%;
+    margin-top: 2.5vh; }
     .navigator .navbar-toggler-icon {
-      font-size: 3vw; }
+      font-size: 6vw; }
 
-  .director {
-    font-size: 6.5vw; }
+  .slide-content {
+    top: 30vh;
+    left: 1.5vh; }
+
+  .slide-content h3 {
+    font-size: 8vw; }
+
+  .slide-content p {
+    font-size: 3vw; }
+
+  .arrow-w {
+    font-size: 10vw; }
 
   .games-list {
-    height: 400vh; }
+    height: auto; }
+
+  .games-list .section-header {
+    margin-top: 12vh;
+    font-size: 12vw; }
+
+  .prices {
+    height: auto; }
 
   .price-categories button {
-    margin: 1.5vh; } }
+    margin: 1.5vh; }
+
+  .price-info h3 {
+    font-size: 10vw; }
+
+  .cost {
+    margin-top: 8vh !important;
+    font-size: 8vw !important; }
+
+  .descriptor {
+    font-size: 1vw;
+    color: red; }
+
+  .carousel-item img {
+    width: 150%; }
+
+  .callUs {
+    position: relative;
+    bottom: 20vh;
+    font-size: 5vw; } }
 @media (max-width: 575.98px) {
   .navigator {
     margin-left: 75%; }
     .navigator .navbar-toggler {
-      font-size: 7.5vw; } }
+      font-size: 7.5vw; }
+
+  .price-info h3 {
+    font-size: 10vw; }
+
+  .price-info p {
+    font-size: 4vw; }
+
+  .cost {
+    margin-top: 1vh !important;
+    font-size: 12vw !important; } }
 
 /*# sourceMappingURL=styles.css.map */
