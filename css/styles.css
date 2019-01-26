@@ -63,6 +63,7 @@ ul {
   padding: 10px 30px !important;
   border-radius: 30px !important;
   text-transform: uppercase;
+  font-size: 1.75vw !important;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
   box-shadow: none !important; }
 
@@ -299,50 +300,68 @@ a.nav-link:hover {
 
 .descriptor {
   margin-top: 2.5vh !important;
-  font-size: 2vw; }
+  font-size: 2.5vw !important; }
 
 .reservations {
-  height: 100vh; }
+  height: 100vh;
+  background-color: #47667b;
+  background-image: linear-gradient(135deg, #47667b 0%, #1e283c 65%, #000000 100%); }
 
 .res-info {
-  margin-top: 15vh; }
-
-.res-info h2 {
-  font-size: 4vw;
   position: relative;
-  top: -2.5vh; }
+  top: 10vh;
+  left: 4vh;
+  color: #fff; }
+
+.res-info h3 {
+  font-size: 4vw;
+  padding-bottom: 4vh; }
+
+.res-info p {
+  font-size: 1.5vw; }
 
 .res-form {
+  height: auto;
   position: relative;
   top: -12vh; }
 
-.form-wrapper.card {
-  height: 85vh;
-  border: 1px solid #f2f5fa;
-  background-color: #f2f5fa; }
+.form-wrapper {
+  border: none !important;
+  border-radius: 2.15vw;
+  z-index: 9; }
 
-.form-wrapper label, .form-wrapper input {
-  margin: 2.5vh 0; }
-
-.form-content {
-  position: relative;
-  top: vh; }
+.jumbotron {
+  padding: 3vh !important;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 2.15vw !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
 
 .res-header {
-  padding: 4vh 0;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%); }
 
-.col-form-label {
-  font-size: 1.5vw !important; }
+.res-header h3 {
+  font-size: 3.5vw; }
+
+.form-content {
+  padding: 5vh 5vh !important; }
+
+.form-content .global-btn {
+  margin-top: 2vh; }
+
+.form-control {
+  margin-bottom: 2.5vh;
+  font-size: 2vw !important; }
+
+.form-control::placeholder {
+  color: grey !important; }
 
 .contact {
   height: 85vh; }
 
 .games-list {
   background-color: #1e283c; }
-
-.reservations {
-  background-color: tomato; }
 
 .contact {
   background-color: violet; }
