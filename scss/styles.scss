@@ -42,10 +42,10 @@ ul {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
 	animation: color-change-2x 2s linear infinite alternate both;
 }
-.active {
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	animation: color-change-2x 2s linear infinite alternate both;
-}
+// .active {
+//   -webkit-animation: color-change-2x 2s linear infinite alternate both;
+// 	animation: color-change-2x 2s linear infinite alternate both;
+// }
 h2:after {
   content: "";
   display: block;
@@ -90,26 +90,29 @@ a.nav-link {
   color: #fff !important;
 }
 a.nav-link:active {
-  text-align:center;
-  padding-bottom:5px;
-  background: /* gradient can be an image */
-    linear-gradient(to right, #00c9db 0%, #0099d6 100%)
-    left
-    bottom
-    transparent
-    no-repeat;
-  background-size:100% 5px ;
+  // text-align:center;
+  // padding-bottom: 3px;
+  // background:
+  //   linear-gradient(to right, #00c9db 0%, #0099d6 100%)
+  //   left
+  //   bottom
+  //   transparent
+  //   no-repeat;
+  // background-size:100% 5px ;
+  // color: red;
 }
 a.nav-link:hover {
-  text-align:center;
+  // text-align:center;
   padding-bottom:5px;
-  background: /* gradient can be an image */
+  background:
     linear-gradient(to right, #00c9db 0%, #0099d6 100%)
     left
     bottom
     transparent
     no-repeat;
-  background-size:100% 5px ;
+  background-size:100% 3px;
+  width: 6vw;
+  font-size: 175%;
 }
 
 // CAROUSEL SETTINGS
@@ -173,6 +176,7 @@ a.nav-link:hover {
 .games-list {
   height: 100vh;
   position: relative;
+  background-color: #1e283c;
 }
 .row {
   height: 50%;
@@ -331,7 +335,7 @@ a.nav-link:hover {
 }
 .form-wrapper {
   border: none !important;
-  border-radius: 2.15vw;
+  border-radius: 2.15vw !important;
   z-index: 9;
 }
 .jumbotron {
@@ -364,64 +368,59 @@ a.nav-link:hover {
 
 
 
-
-
-
-
-
-
-// .res-form {
-//   position: relative;
-//   top: -12vh;
-// }
-// .res-form
-// .form-wrapper.card{
-//   height: 85vh;
-//   // border: 1px solid #f2f5fa;
-//   // background-color: #f2f5fa
-// }
-// .form-wrapper label, .form-wrapper input {
-//   margin: 2.5vh 0;
-// }
-// .form-content {
-//   position: relative;
-//   top: vh;
-// }
-// .res-header {
-//   border: none;
-//   padding: 4vh 0;
-//   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
-// }
-// .col-form-label {
-//   font-size: 1.5vw !important;
-// }
-
-
 // CONTACT SETTINGS
 .contact {
-  height: 85vh;
-}
-
-
-
-// BACKGROUND WRAPPER DECLARATION TAB
-.games-list {
+  height: 92vh;
   background-color: #1e283c;
+  color: #fff;
 }
-// .prices {
-//   background-color: indigo;
-// }
-.reservations {
-
+.social-bar {
+  height: 92vh;
+  width: auto;
+  background-image: url('/images/contacts.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.contact {
-  background-color: violet;
+.social-bar .logo {
+ left: 30%;
 }
-
-
-
-
-
+.contact-list {
+  font-size: 1.75vw;
+  position: relative;
+  top: 20vh;
+  left: 20%;
+}
+.contact-list li {
+  padding: 1.5vh 0;
+}
+.social-list a {
+  font-size: 2vw;
+  color: #fff;
+  position: relative;
+  top: 20vh;
+  left: 5vw;
+  padding: 0 1vw;
+}
+.map {
+  height: 100%;
+  width: auto;
+  padding: 0 !important;
+}
+.map-frame {
+  height: 92vh;
+}
+footer {
+  color: #fff;
+  font-size: 1.5vw;
+  height: 8vh;
+  width: auto;
+  background-color: #47667b;
+  background-image: linear-gradient(135deg, #47667b 0%, #1e283c 65%, #000000 100%);
+}
+footer span {
+  position: relative;
+  top: 2.5vh;
+}
 
 
 

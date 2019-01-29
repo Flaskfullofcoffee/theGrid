@@ -13,6 +13,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/aadfa0413b.js"></script>
+    <script type="text/javascript" <script src="scripts/palindrome.js" charset="utf-8"></script>
+
+    </script>
     <title>The Grid Cyber Lounge</title>
   </head>
   <body>
@@ -27,22 +30,22 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#!">Games</a>
+            <a class="nav-link" href="#games_section">Games</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#!">Pricing</a>
+            <a class="nav-link" href="#rates_section">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#!">RSVP</a>
+            <a class="nav-link" href="#reservation_section">RSVP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#!">Contact</a>
+            <a class="nav-link" href="#contact_section">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <section class="intro"> <!-- slider section -->
-      <div id="carousel-intro" class="carousel slide" data-interval="false" data-ride="carousel">
+      <div id="carousel-intro" class="carousel slide" data-interval="6000" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-intro" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-intro" data-slide-to="1"></li>
@@ -77,7 +80,7 @@
       </div>
       <div class="arrow-wrapper"><i class="arrow fa fa-angle-double-down" aria-hidden="true"></i></div>
     </section>
-    <section class="container-fluid games-list"> <!-- games section -->
+    <section id="games_section" class="container-fluid games-list"> <!-- games section -->
       <div class="row">
         <div class="col-xs-12 col-md-6 col-lg card-1 text-center">
           <h2 class="text-center section-header">Our Games</h2>
@@ -108,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="prices container-fluid"> <!-- pricing section -->
+    <section id="rates_section" class="prices container-fluid"> <!-- pricing section -->
       <h2 class="text-center section-header">Rates</h2>
       <div class="price-categories">
         <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#hourlyCollapse" aria-expanded="true" aria-controls="hourlyCollapse">Hourly</button>
@@ -264,7 +267,7 @@
             <li class="mr-4">Massive game library</li>
           </ul>
         </div>
-        <div class="res-form col-xs-8 col-md-4 offset-sm-1">
+        <div id="reservation_section" class="res-form col-xs-8 col-md-4 offset-sm-1">
           <div class="form-wrapper card text-center">
             <div class="jumbotron jumbotron-fluid res-header">
               <h3 class="card-text text-center">Plan a party</h3>
@@ -294,33 +297,32 @@
         </div>
       </div>
     </section>
-    <section class="contact container-fluid"> <!-- contact/local/social media section -->
+    <section id="contact_section" class="contact container-fluid"> <!-- contact/local/social media section -->
       <div class="row">
-        <div class="col social-bar">
-          <h1>LOGO</h1>
-          <p>Your premier boutique computer arcade</p>
-          <ul>
-            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+        <div class="col-md-4 social-bar">
+          <a class="logo" href="#"><img src="/images/master_logo-2-1.png" alt="the grid logo"></a>
+          <div class="contact-list">
+            <ul>
+              <li class="address"><i class="fa fa-map" aria-hidden="true"></i>
+                1840 E Warner Rd<br />Tempe,AZ 85284</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> 480.378.6005</li>
+              <li><i class="fa fa-address-book-o" aria-hidden="true"></i> info@thegridcl.com</li>
+            </ul>
+          </div>
+          <ul class="social-list">
+            <a href="https://www.facebook.com/TheGridTempe/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/explore/locations/278418879264888/the-grid-cyber-lounge-tempe?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/thegridcl?lang=en" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.yelp.com/biz/the-grid-cyber-lounge-tempe" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a>
           </ul>
         </div>
-        <div class="col contact-list">
-          <h3>Our contacts</h3>
-          <ul>
-            <li class="address"><i class="fa fa-map" aria-hidden="true"></i>
-              1840 E Warner Rd<br />Tempe,AZ 85284</li>
-            <li><i class="fa fa-phone" aria-hidden="true"></i> 480.378.6005</li>
-            <li><i class="fa fa-address-book-o" aria-hidden="true"></i> info@thegridcl.com</li>
-          </ul>
-        </div>
-        <div class="col map">
-          <div style="width: 100%"><iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1840%20e%20warner%20rd%20tempe%2Caz%2085284+(The%20grid%20cyber%20lounge)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe></div><br />
-        </div>
+        <div class="col-md-8 map">
+          <div class="map-frame embed-responsive"><iframe class="embed-responsive-item" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1840%20E.%20Warner%20rd%20Tempe%2CAZ%2085284+(The%20grid%20cyber%20lounge)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
       </div>
     </section>
-    <hr>
-    <footer></footer>
+    <footer class="text-center">
+      <span>&copy made by 2019 Zachary Dobbs</span>
+    </footer>
   </body>
 </html>
