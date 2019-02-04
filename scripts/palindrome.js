@@ -181,10 +181,21 @@ function functionalLengths(elements) {
 //Defining OBJECTS
 
 // reverses a string
-function reverse(string) {
-  return Array.from(string).reverse().join('');
+// Adds `reverse` to all strings.
+String.prototype.reverse = function() {
+  return Array.from(this).reverse().join("");
+}
+String.prototype.blank = function() {
+  return this
+}
+let test = `' '`;
+let emptyTest = (string) => {
+  let empty = /^(?!\s*$).+/
+  return string === empty;
 }
 
+
+// Defines a Phrase object.
 function Phrase(content) {
   this.content = content;
 
@@ -193,13 +204,8 @@ function Phrase(content) {
     return this.content.toUpperCase();
   }
 
-  // Returns true for a palindrome, false otherwise.
+  // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
-    return this.processedContent() === reverse(this.processedContent());
+    return this.processedContent() === this.processedContent().reverse();
   }
-}
-
-function TranslatedPhrase(content, translation) {
-  this.content = content;
-  this.translation = translation;
 }
