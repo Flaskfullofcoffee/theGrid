@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass:watch": "sass --watch scss:css",
-   "server": "browser-sync start --server --files css index.html scripts",
-   "start": "concurrently 'npm run sass:watch' 'npm run server'",
+    "server": "browser-sync start --server --files css index.html scripts",
+    "start": "concurrently 'npm run sass:watch' 'npm run server'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +23,8 @@
     "browser-sync": "^2.26.3",
     "concurrently": "^4.1.0",
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "googleapis": "^27.0.0"
   }
 }
