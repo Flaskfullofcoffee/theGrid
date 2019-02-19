@@ -25,6 +25,7 @@
     "node-sass": "^4.11.0"
   },
   "dependencies": {
-    "googleapis": "^37.2.0"
+    "googleapis": "^37.2.0",
+    "request": "^2.88.0"
   }
 }
