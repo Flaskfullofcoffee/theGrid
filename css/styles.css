@@ -183,38 +183,38 @@ a.nav-link:hover {
   min-height: 50vh !important; }
 
 .card-2 {
-  background-image: url("../images/1A-2-1.jpg");
+  background-image: url("images/1A-2-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .card-3 {
-  background-image: url("/images/2A-1.jpg");
+  background-image: url("images/2A-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .card-4 {
-  background-image: url("/images/3A-1.jpg");
+  background-image: url("images/3A-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .card-5 {
-  background-image: url("/images/4A-1-1.jpg");
+  background-image: url("images/4A-1-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .card-6 {
-  background-image: url("/images/5A-1-1.jpg");
+  background-image: url("images/5A-1-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .card-7 {
-  background-image: url("/images/6A-2-1.jpg");
+  background-image: url("images/6A-2-1.jpg");
   background-size: cover;
   background-position: center; }
 
 .prices {
   height: 200vh;
-  background-image: url("/images/background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
