@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content-wrapper {
+  height: auto;
+  background-image: url('/images/hallway.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-list {
+  height: auto;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+#game-list li {
+  font-size: 2vw;
+  color: #fff;
+}

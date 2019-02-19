@@ -5,10 +5,17 @@
 // BUTTON ON-FOCUS ANIMATION
 @-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}};
 
+* {
+  list-style: none;
+  text-decoration: none;
+}
 
 body {
   margin: 0 !important;
   padding: 0 !important;
+}
+a {
+  color: #fff !important;
 }
 .arrow-wrapper {
   display: flex;
@@ -312,6 +319,7 @@ a.nav-link:hover {
 
 .reservations {
   height: 100vh;
+  margin-top: -5vh;
   background-color: #47667b;
   background-image: linear-gradient(135deg, #47667b 0%, #1e283c 65%, #000000 100%);
 }
@@ -328,6 +336,20 @@ a.nav-link:hover {
 .res-info p {
   font-size: 1.5vw;
 }
+.perks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+.perks i {
+  top: 1.5vh;
+  font-size: 3.5vw;
+}
+.perk-item {
+  margin: 2vh 1.75vh;
+  font-size: 1.75vw;
+}
 .res-form {
   height: auto;
   position: relative;
@@ -340,7 +362,6 @@ a.nav-link:hover {
 }
 .jumbotron {
   padding: 3vh !important;
-  margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 2.15vw !important;
   border-bottom-left-radius: 0 !important;
@@ -353,7 +374,7 @@ a.nav-link:hover {
   font-size: 3.5vw;
 }
 .form-content {
-  padding: 5vh 5vh !important;
+  padding: 1.5vh 5vh !important;
 }
 .form-content .global-btn {
   margin-top: 2vh;
@@ -380,26 +401,46 @@ a.nav-link:hover {
   background-image: url('/images/contacts.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
 }
-.social-bar .logo {
- left: 30%;
+.logo2 {
+  position: relative;
+  top: 12vh;
 }
 .contact-list {
   font-size: 1.75vw;
   position: relative;
   top: 20vh;
-  left: 20%;
+  left: 25%;
+}
+.contact-list ul{
+  padding: 0;
+  margin: 0;
 }
 .contact-list li {
-  padding: 1.5vh 0;
+  font-size: 1.75vw;
+  padding: 1vh 0;
+  text-align: left;
 }
 .social-list a {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #fff;
   position: relative;
-  top: 20vh;
-  left: 5vw;
+  top: 22vh;
+  left: -1vw;
   padding: 0 1vw;
+}
+.fa-facebook-square:hover{
+  color: #3b5998;
+}
+.fa-instagram:hover {
+  color: #fb3958;
+}
+.fa-twitter-square:hover {
+  color: #0084b4;
+}
+.fa-yelp:hover {
+  color: #c41200;
 }
 .map {
   height: 100%;

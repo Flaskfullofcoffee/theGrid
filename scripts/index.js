@@ -1,14 +1,6 @@
 let url = 'https://script.google.com/macros/s/AKfycbyGbc2AyoKf6rMSa4nT21bydauvtUahBxD9WhIJ_JKw9dBYHC0/exec';
 
 
-function createNode(element) {
-      return document.createElement(element);
-  }
-
-  function append(parent, el) {
-    return parent.appendChild(el);
-  }
-
 fetch(url)
   .then((resp) => resp.json())
   .then(json => {
