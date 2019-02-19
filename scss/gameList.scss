@@ -5,13 +5,13 @@
 }
 .content-wrapper {
   height: auto;
-  background-image: url('/images/hallway.jpg');
+  background-image: url('../images/hallway.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #game-list {
-  height: auto;
+  height: 100vh;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: baseline;
