@@ -46,6 +46,9 @@ body {
 a {
   color: #fff !important; }
 
+a:hover {
+  text-decoration: none !important; }
+
 .arrow-wrapper {
   display: flex;
   justify-content: center;
@@ -170,6 +173,14 @@ a.nav-link:hover {
 
 .slide-content p {
   font-size: 1.25vw; }
+
+.gameBtn {
+  position: relative;
+  top: -2.5vh; }
+
+.gameBtn:hover {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both; }
 
 .games-list {
   height: 100vh;
@@ -381,31 +392,33 @@ a.nav-link:hover {
   justify-content: center; }
 
 .logo2 {
-  position: relative;
-  top: 12vh; }
+  text-align: center;
+  margin-top: -32vh; }
 
 .contact-list {
-  font-size: 1.75vw;
-  position: relative;
-  top: 20vh;
-  left: 25%; }
+  text-align: center;
+  font-size: 1.75vw; }
 
 .contact-list ul {
-  padding: 0;
-  margin: 0; }
+  text-align: left;
+  position: relative;
+  top: 8vh;
+  left: 4vw; }
 
 .contact-list li {
   font-size: 1.75vw;
-  padding: 1vh 0;
-  text-align: left; }
+  padding: 1vh 0; }
+
+.social-list {
+  text-align: center;
+  position: relative;
+  top: 38vh;
+  left: -2vw; }
 
 .social-list a {
+  padding: 0 1vw;
   font-size: 2.5vw;
-  color: #fff;
-  position: relative;
-  top: 22vh;
-  left: -1vw;
-  padding: 0 1vw; }
+  color: #fff; }
 
 .fa-facebook-square:hover {
   color: #3b5998; }
@@ -414,7 +427,7 @@ a.nav-link:hover {
   color: #fb3958; }
 
 .fa-twitter-square:hover {
-  color: #0084b4; }
+  color: #1dcaff; }
 
 .fa-yelp:hover {
   color: #c41200; }
@@ -540,6 +553,9 @@ footer span {
 
   .cost {
     margin-top: 1vh !important;
-    font-size: 12vw !important; } }
+    font-size: 12vw !important; }
+
+  .contact-list {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

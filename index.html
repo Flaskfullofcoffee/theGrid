@@ -86,7 +86,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 col-lg card-1 text-center">
           <h2 class="text-center section-header">Our Games</h2>
-          <button class="btn btn-primary global-btn" type="button" name="button">
+          <button class="btn btn-primary global-btn gameBtn" type="button" name="button">
             <a href="gameList.html">View more</a>
           </button>
         </div>
@@ -124,7 +124,7 @@
           <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#bulkCollapse" aria-expanded="false" aria-controls="bulkCollapse">Bulk</button>
           <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#allDayCollapse" aria-expanded="false" aria-controls="allDayCollapse">24hr Binge</button>
         </div>
-        <div class="accordion container" id="collapseTest">
+        <div class="accordion container-fluid" id="collapseTest">
           <div class="row">
             <div class="col">
               <div class="collapse show priceboard" id="hourlyCollapse" data-parent="#collapseTest">
@@ -277,15 +277,15 @@
           </ul>
         </div>
 
-        <div id="reservation_section" class="res-form col-xs-8 col-md-4 offset-sm-1">
+        <div id="reservation_section" class="res-form col-xs-10 col-md-4 offset-sm-1">
           <div class="form-wrapper card text-center">
             <div class="jumbotron jumbotron-fluid res-header">
               <h3 class="card-text text-center">Plan a party</h3>
             </div>
             <!-- Start OF WufooForm EMBED -->
-            <form id="form1" name="form1" class="wufoo topLabel page container form-content" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+            <form id="form1" name="form1" class="wufoo topLabel page container form-content text" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
             action="https://thegridcl.wufoo.com/forms/zgx4sqr0cnf0du/#public">
-              <ul>
+              <ul class="p-0">
                 <li id="foli1" data-wufoo-field data-field-type="text" class="notranslate form-group row">
                   <!-- <label class="desc" id="title1" for="Field1">Name</label> -->
                   <div class="col-12">
@@ -323,44 +323,13 @@
               </ul>
             </form>
             <!-- END OF WufooForm EMBED -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-        <div id="reservation_section" class="res-form col-xs-8 col-md-4 offset-sm-1">
-          <div class="form-wrapper card text-center">
-            <div class="jumbotron jumbotron-fluid res-header">
-              <h3 class="card-text text-center">Plan a party</h3>
-            </div>
-            <!-- <form class="container form-content">
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="text" class="form-control" id="nameInput" placeholder="Full Name">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="text" class="form-control" id="numberInput" placeholder="Phone number">
-                </div>
-              </div>
-              <div class="form-group text-left">
-                <textarea class="form-control" id="textArea" rows="3" placeholder="Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary global-btn text-center">Send Message</button>
-            </form> -->
           </div>
         </div>
       </div>
     </section>
     <section id="contact_section" class="contact container-fluid"> <!-- contact/local/social media section -->
       <div class="row">
-        <div class="col-md-4 social-bar text-center">
+        <div class="col-md-4 social-bar d-flex flex-column">
           <div class="logo2">
             <img src="images/master_logo-2-1.png" alt="the grid logo">
           </div>
