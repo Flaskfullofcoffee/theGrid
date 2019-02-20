@@ -364,6 +364,9 @@ a.nav-link:hover {
 .form-control::placeholder {
   color: grey !important; }
 
+.wufoo.hide {
+  display: none; }
+
 .contact {
   height: 92vh;
   background-color: #1e283c;
