@@ -592,8 +592,16 @@ footer span {
     left: 12vw;
     font-size: 5vw; }
 
-  .contact-list ul {
-    display: none; }
+  .contact-list {
+    display: flex; }
+
+  .logo2 {
+    position: relative;
+    left: 2.5vw; }
+
+  .social-list {
+    position: relative;
+    left: -4vw; }
 
   .social-list a {
     font-size: 6.5vw;
