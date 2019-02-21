@@ -559,10 +559,33 @@ footer span {
 
   .reservations {
     margin-top: -26vh;
-    height: 150vh; }
+    height: 180vh; }
 
   .res-form {
-    visibility: hidden; }
+    position: relative;
+    top: 8vh;
+    left: 10%;
+    max-width: 80%; }
+
+  .callUs {
+    position: relative;
+    top: 80vh;
+    font-size: 4vw !important; }
+
+  .res-info {
+    text-align: left;
+    max-width: 90%; }
+
+  .res-info h3 {
+    font-size: 8vw; }
+
+  .res-info p {
+    font-size: 3.5vw; }
+
+  .perks li {
+    font-size: 3vw; }
+  .perks i {
+    font-size: 6vw; }
 
   .contact-list li {
     position: relative;
