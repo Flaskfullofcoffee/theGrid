@@ -277,13 +277,6 @@ a.nav-link:hover {
 .hourly {
   margin-top: 2.5vh; }
 
-.callUs {
-  font-size: 2.5vw;
-  color: #fff; }
-
-.callUs span {
-  color: #00c9db; }
-
 .price-info h3 {
   color: black;
   font-size: 5vw;
@@ -374,6 +367,15 @@ a.nav-link:hover {
 
 .form-control::placeholder {
   color: grey !important; }
+
+.callUs {
+  position: relative;
+  top: 5vh;
+  font-size: 3.5vw;
+  color: #fff; }
+
+.callUs span {
+  color: #00c9db; }
 
 .wufoo.hide {
   display: none; }
@@ -555,7 +557,23 @@ footer span {
     margin-top: 1vh !important;
     font-size: 12vw !important; }
 
-  .contact-list {
-    text-align: center; } }
+  .reservations {
+    margin-top: -26vh;
+    height: 150vh; }
+
+  .res-form {
+    visibility: hidden; }
+
+  .contact-list li {
+    position: relative;
+    left: 12vw;
+    font-size: 5vw; }
+
+  .contact-list ul {
+    display: none; }
+
+  .social-list a {
+    font-size: 6.5vw;
+    padding: 0 2.5vw; } }
 
 /*# sourceMappingURL=styles.css.map */
