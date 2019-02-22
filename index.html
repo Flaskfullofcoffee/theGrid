@@ -313,8 +313,8 @@
                 </li>
                 <li class="buttons">
                   <div>
-                    <input id="saveForm" name="saveForm" class="btTxt submit btn btn-primary global-btn text-center" type="submit" value="Send Message" />
-                    <a href="https://master.wufoo.com/forms/m7p0x3/def/field1=thegridcl.wufoo.com/forms/thegrid/"</a>
+                    <input id="saveForm" name="saveForm" class="btTxt submit btn btn-primary text-center" type="submit" value="Send Message" />
+                    <!-- <a href="https://master.wufoo.com/forms/m7p0x3/def/field1=thegridcl.wufoo.com/forms/thegrid/"</a> -->
                   </div>
                 </li>
                 <li class="hide">
@@ -328,18 +328,38 @@
       </div>
     </section>
     <section id="contact_section" class="contact container-fluid"> <!-- contact/local/social media section -->
-      <div class="row">
+      <div class="row local-wrapper">
         <div class="col-md-4 social-bar d-flex flex-column">
           <div class="logo2">
             <img src="images/master_logo-2-1.png" alt="the grid logo">
           </div>
           <div class="contact-list">
-            <ul>
-              <li class="address"><i class="fa fa-map" aria-hidden="true"></i>
-                1840 E Warner Rd<br />Tempe,AZ 85284</li>
-              <li><i class="fa fa-phone" aria-hidden="true"></i> 480.378.6005</li>
-              <li><i class="fa fa-address-book-o" aria-hidden="true"></i> info@thegridcl.com</li>
-            </ul>
+            <div class="locations d-flex flex-column">
+              <button id="tempeBtn" class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#tempeCollapse" aria-expanded="true" aria-controls="tempeCollapse">Tempe</button>
+              <button id="phxBtn" class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phxCollapse" aria-expanded="false" aria-controls="phxCollapse">Phoenix</button>
+            </div>
+            <div class="accordian" id="localCollapse">
+              <div class="row">
+                <div class="col">
+                  <div class="collapse show" id="tempeCollapse" data-parent="#localCollapse">
+                    <ul>
+                      <li class="address"><i class="fa fa-map" aria-hidden="true"></i>
+                        1840 E Warner Rd <br />Tempe, AZ 85284 STE 116</li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i> 480.378.6005</li>
+                      <li><i class="fa fa-address-book-o" aria-hidden="true"></i> info@thegridcl.com</li>
+                    </ul>
+                  </div>
+                  <div class="collapse" id="phxCollapse" data-parent="#localCollapse">
+                    <ul>
+                      <li class="address"><i class="fa fa-map" aria-hidden="true"></i>
+                        1840 E Warner Rd <br />Tempe, AZ 85284 STE 116</li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i> 480.378.6005</li>
+                      <li><i class="fa fa-address-book-o" aria-hidden="true"></i> info@thegridcl.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <ul class="social-list">
             <a href="https://www.instagram.com/explore/locations/278418879264888/the-grid-cyber-lounge-tempe?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -351,6 +371,11 @@
         <div class="col-md-8 map">
           <div class="map-frame embed-responsive"><iframe class="embed-responsive-item" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1840%20E.%20Warner%20rd%20Tempe%2CAZ%2085284+(The%20grid%20cyber%20lounge)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
+        </div>
+        <!-- <div class="col-md-8 map2">
+          <div class="map-frame embed-responsive"><iframe class="embed-responsive-item" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+        </div> -->
       </div>
     </section>
     <footer class="text-center">
