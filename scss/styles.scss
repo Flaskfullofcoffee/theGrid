@@ -655,24 +655,39 @@ footer span {
       font-size: 6vw;
     }
   }
+  .contact-list {
+    align-self: center;
+  }
+  .locations {
+    margin: 2.5vh 0;
+  }
+  #tempeBtn, #phxBtn {
+    max-width: 80%;
+    font-size: 4.5vw !important;
+  }
+  .contact-list ul {
+    position: static;
+    align-self: center;
+    margin: 5vh 0 2.5vh;
+  }
   .contact-list li {
-    position: relative;
-    left: 12vw;
     font-size: 5vw;
   }
-  .contact-list {
+  .social-bar {
     display: flex;
+    justify-content: center;
   }
   .logo2 {
-    position: relative;
-    left: 2.5vw;
+    position: static;
+    align-self: center;
+    margin-top: -2vh;
   }
   .social-list {
     position: relative;
-    left: -4vw;
+    top: 5vh;
   }
   .social-list a {
-    font-size: 6.5vw;
-    padding: 0 2.5vw;
+    font-size: 5.5vw;
+    padding: 0 4.5vw;
   }
 }
