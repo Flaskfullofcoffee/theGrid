@@ -15,4 +15,5 @@ function changeImg2() {
 function changeImg1() {
   map1.classList.add('mapHide');
   map2.classList.remove('mapHide');
+  tempeBtn.classList.remove('current')
 }

@@ -55,10 +55,10 @@ ul {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
 	animation: color-change-2x 2s linear infinite alternate both;
 }
-// .active {
-//   -webkit-animation: color-change-2x 2s linear infinite alternate both;
-// 	animation: color-change-2x 2s linear infinite alternate both;
-// }
+.current {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
 h2:after {
   content: "";
   display: block;
