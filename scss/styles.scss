@@ -14,12 +14,15 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 a {
   color: #fff !important;
 }
+
 a:hover {
   text-decoration: none !important;
 }
+
 .arrow-wrapper {
   display: flex;
   justify-content: center;
@@ -477,6 +480,9 @@ a.nav-link:hover {
 }
 .map-frame {
   height: 92vh;
+}
+.mapHide {
+  display: none;
 }
 footer {
   color: #fff;

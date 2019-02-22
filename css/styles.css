@@ -450,6 +450,9 @@ a.nav-link:hover {
 .map-frame {
   height: 92vh; }
 
+.mapHide {
+  display: none; }
+
 footer {
   color: #fff;
   font-size: 1.5vw;
