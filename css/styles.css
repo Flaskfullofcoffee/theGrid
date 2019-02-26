@@ -160,7 +160,8 @@ a.nav-link:hover {
   background-position: center; }
 
 .carousel-indicators {
-  bottom: 8vh !important; }
+  bottom: 8vh !important;
+  z-index: 8 !important; }
 
 .slide-content {
   position: absolute;
@@ -567,11 +568,54 @@ footer span {
     .navigator .navbar-toggler {
       font-size: 7.5vw; }
 
+  .global-btn {
+    font-size: 3vw !important; }
+
+  .carousel-item > img {
+    background-size: auto; }
+
+  .navbar-collapse {
+    width: 0vw; }
+
+  .navbar-nav {
+    background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
+    position: relative;
+    width: 100vw;
+    height: 83vh;
+    left: -78vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 9; }
+    .navbar-nav li {
+      padding: 2vh 0; }
+      .navbar-nav li a {
+        font-size: 7.5vw; }
+
+  .arrow-wrapper {
+    z-index: 8; }
+
+  .section-header {
+    font-size: 8vw;
+    margin-top: -2vh; }
+
+  .price-card {
+    order: 2; }
+
+  .price-card-center {
+    order: 1; }
+
+  .price-info {
+    justify-content: center; }
+
   .price-info h3 {
     font-size: 10vw; }
 
   .price-info p {
-    font-size: 4vw; }
+    font-size: 7.5vw !important;
+    color: #000; }
+
+  .price-categories:nth-last-child {
+    margin-left: 7vw; }
 
   .cost {
     margin-top: 1vh !important;
@@ -579,33 +623,39 @@ footer span {
 
   .reservations {
     margin-top: -26vh;
-    height: 180vh; }
+    height: 185vh; }
 
   .res-form {
     position: relative;
-    top: 8vh;
+    top: 0vh;
     left: 10%;
     max-width: 80%; }
 
   .callUs {
     position: relative;
-    top: 80vh;
-    font-size: 4vw !important; }
+    top: 78vh;
+    font-size: 4.5vw !important; }
 
   .res-info {
     text-align: left;
     max-width: 90%; }
 
   .res-info h3 {
-    font-size: 8vw; }
+    font-size: 9vw; }
 
   .res-info p {
-    font-size: 3.5vw; }
+    font-size: 4vw; }
 
   .perks li {
     font-size: 3vw; }
   .perks i {
     font-size: 6vw; }
+
+  .jumbotron h3 {
+    font-size: 5vw; }
+
+  .form-control {
+    font-size: 3vw !important; }
 
   .contact-list {
     align-self: center; }
