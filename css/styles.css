@@ -96,7 +96,7 @@ h2:after {
 .section-header {
   margin-top: 5vh;
   margin-bottom: 10vh;
-  font-size: 5vw;
+  font-size: 4.25vw;
   letter-spacing: 3px;
   font-family: 'Righteous', cursive;
   text-transform: uppercase;
@@ -127,9 +127,7 @@ a.nav-link {
 a.nav-link:hover {
   padding-bottom: 5px;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%) left bottom transparent no-repeat;
-  background-size: 100% 3px;
-  width: 6vw;
-  font-size: 175%; }
+  background-size: 100% 3px; }
 
 .intro {
   height: 100vh; }
@@ -289,7 +287,7 @@ a.nav-link:hover {
 
 .price-info h3 {
   color: black;
-  font-size: 5vw;
+  font-size: 4.25vw;
   margin-top: 5vh; }
 
 .price-info p {
@@ -634,7 +632,7 @@ footer span {
   .callUs {
     position: relative;
     top: 78vh;
-    font-size: 4.5vw !important; }
+    font-size: 4.25vw !important; }
 
   .res-info {
     text-align: left;
