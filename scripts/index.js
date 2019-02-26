@@ -40,25 +40,35 @@ fetch(url)
 
 
 
+// let count = [];
+// for (var i = 0; i <= 150; i++) {
+//   count.push(i);
+// } // let count = 150;
+//
+//
+//   let countDown = (count) => {
+//     let ul = document.createElement('ul');
+//     count.forEach(num => {
+//       let li = document.createElement('li');
+//       li.length = 30;
+//       li.textContent = num;
+//       ul.appendChild(li);
+//       console.log(li);
+//     })
+//     let section = document.getElementById('section');
+//     section.innerHTML = '';
+//     section.appendChild(ul);
+//   };
+// countDown(count);
 
 
 
 
 
-  //
-  // const search = (gameList) => (event) => {
-  //   let searchBox = document.getElementById('searchbar');
-  //   let response = document.querySelector('.result');
-  //   let reset;
-  //   if  (gameList.includes(searchBox.value)) {
-  //     response.textContent = `${searchBox.value} found`;
-  //     console.log(event);
-  //   } else {
-  //     response.textContent = 'Game not Found';
-  //   }
-  // }
-
-
-
-
-  // set as a form submit event isntead of a event listener
+// var x = new Array(10);
+//
+// for (var i = 0; i < x.length; i++) {
+//   x[i] = new Array(3);
+// }
+//
+// console.log(x);

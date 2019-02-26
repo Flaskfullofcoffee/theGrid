@@ -1,16 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
 * {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .content-wrapper {
-  height: auto;
+  height: 1200vh;
   background-image: url("../images/hallway.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat; }
+  .content-wrapper h1 {
+    font-size: 6vw;
+    font-family: 'Righteous', cursive;
+    color: #fff; }
 
 #game-list {
-  height: 100vh;
+  height: 85%;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: baseline; }
@@ -18,5 +24,10 @@
 #game-list li {
   font-size: 2vw;
   color: #fff; }
+
+#searchbar {
+  padding: 1.15vh;
+  width: 25%;
+  border-radius: 8vw; }
 
 /*# sourceMappingURL=gameList.css.map */
