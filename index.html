@@ -119,144 +119,299 @@
     <section id="rates_section" class="prices"> <!-- pricing section -->
       <div class="container-fluid">
         <h2 class="text-center section-header">Rates</h2>
-        <div class="price-categories">
-          <button class="btn btn-primary global-btn current" type="button" data-toggle="collapse" data-target="#hourlyCollapse" aria-expanded="true" aria-controls="hourlyCollapse">Hourly</button>
-          <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#bingeCollapse" aria-expanded="false" aria-controls="bingeCollapse">Binge</button>
-          <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#bulkCollapse" aria-expanded="false" aria-controls="bulkCollapse">Bulk</button>
-          <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#allDayCollapse" aria-expanded="false" aria-controls="allDayCollapse">24hr Binge</button>
+        <div class="location-prices text-center">
+          <button class="btn btn-primary global-btn current" type="button" data-toggle="collapse" data-target="#tempe" aria-expanded="true" aria-controls="tempe">Tempe</button>
+          <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phoenix" aria-expanded="false" aria-controls="phoenix">Phoenix</button>
         </div>
-        <div class="accordion container-fluid" id="collapseTest">
-          <div class="row">
-            <div class="col">
-              <div class="collapse show priceboard" id="hourlyCollapse" data-parent="#collapseTest">
-                <div class="row justify-content-sm-center">
-                  <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
-                    <div class="card price-info text-center d-flex">
-                      <h3 class="flex-fill">Standard</h3>
-                      <p class="cost flex-fill">$5/hr</p>
-                      <hr>
-                      <p class="flex-fill">Intel i5 7<sup>th</sup> Gen</p>
-                      <hr>
-                      <p class="flex-fill">16GM RAM</p>
-                      <hr class="flex-fill">
-                      <p class="flex-fill">NVIDIA GTX 1070</p>
-                      <hr class="flex-fill">
-                      <p class="flex-fill">BenQ 24" esports 240hz xl's</p>
-                      <hr class="flex-fill">
-                    </div>
-                  </div>
-                  <div class="col-md-1">
+        <div class="accordion" id="location-collapse">
+          <div class="collapse show" id="tempe" data-parent="#location-collapse">
+            <div class="price-categories">
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#hourlyCollapse" aria-expanded="true" aria-controls="hourlyCollapse">Hourly</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#bingeCollapse" aria-expanded="false" aria-controls="bingeCollapse">Binge</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#bulkCollapse" aria-expanded="false" aria-controls="bulkCollapse">Bulk</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#allDayCollapse" aria-expanded="false" aria-controls="allDayCollapse">24hr Binge</button>
+            </div>
+            <div class="accordion container-fluid" id="collapseTempe">
+              <div class="row">
+                <div class="col">
+                  <div class="collapse show priceboard" id="hourlyCollapse" data-parent="#collapseTempe">
+                    <div class="row justify-content-sm-center">
+                      <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
+                        <div class="card price-info text-center d-flex">
+                          <h3 class="flex-fill">Standard</h3>
+                          <p class="cost flex-fill">$5/hr</p>
+                          <hr>
+                          <p class="flex-fill">Intel i5 7<sup>th</sup> Gen</p>
+                          <hr>
+                          <p class="flex-fill">16GM RAM</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">NVIDIA GTX 1070</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">BenQ 24" esports 240hz xl's</p>
+                          <hr class="flex-fill">
+                        </div>
+                      </div>
+                      <div class="col-md-1">
 
+                      </div>
+                      <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
+                        <div class="card price-info text-center d-flex">
+                          <h3 class="flex-fill">VIP</h3>
+                          <p class="cost flex-fill">$7/hr</p>
+                          <hr>
+                          <p class="flex-fill">Intel i7 7<sup>th</sup> Gen</p>
+                          <hr>
+                          <p class="flex-fill">16GM RAM</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">NVIDIA GTX 1080</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">BenQ 27" 2K esports 144hz xl's</p>
+                          <hr class="flex-fill">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
-                    <div class="card price-info text-center d-flex">
-                      <h3 class="flex-fill">VIP</h3>
-                      <p class="cost flex-fill">$7/hr</p>
-                      <hr>
-                      <p class="flex-fill">Intel i7 7<sup>th</sup> Gen</p>
-                      <hr>
-                      <p class="flex-fill">16GM RAM</p>
-                      <hr class="flex-fill">
-                      <p class="flex-fill">NVIDIA GTX 1080</p>
-                      <hr class="flex-fill">
-                      <p class="flex-fill">BenQ 27" 2K esports 144hz xl's</p>
-                      <hr class="flex-fill">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="bingeCollapse" data-parent="#collapseTempe">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">6hr Binge<br />$15</p>
+                          <hr>
+                          <p class="cost">10hr Binge<br />$20</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>Binge</h3>
+                          <hr>
+                          <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>VIP</h3>
+                          <p class="cost">6hr Binge<br />$20</p>
+                          <hr>
+                          <p class="cost">10hr Binge<br />$25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="bulkCollapse" data-parent="#collapseTempe">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">6hr Bulk<br />$20</p>
+                          <hr>
+                          <p class="cost">10hr Bulk<br />$25</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>Bulk</h3>
+                          <hr>
+                          <p class="descriptor">Bulk time starts from the moment you login & expires after a full 24hrs. This means that the timer will continue only if you are logged on, but will still expire if time isn't used by the end of the 24hrs from log on.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>VIP</h3>
+                          <p class="cost">6hr Bulk<br />$25</p>
+                          <hr>
+                          <p class="cost">10hr Bulk<br />$30</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="allDayCollapse" data-parent="#collapseTempe">
+                    <div class="row justify-content-sm-center">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">Mon - Thur<br />$40</p>
+                          <hr>
+                          <p class="cost">Thur - Sun<br />$45</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>24hr Binge</h3>
+                          <hr>
+                          <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card text-center">
+                        <div class="card price-info">
+                          <h3>VIP</h3>
+                          <p class="cost">Mon - Thur<br />$45</p>
+                          <hr>
+                          <p class="cost">Thur - Sun<br />$50</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="collapse priceboard" id="bingeCollapse" data-parent="#collapseTest">
-                <div class="row">
-                  <div class="col-md-4 col-xs-12 price-card">
-                    <div class="card price-info text-center">
-                      <h3>Standard</h3>
-                      <p class="cost">6hr Binge<br />$15</p>
-                      <hr>
-                      <p class="cost">10hr Binge<br />$20</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12 price-card price-card-center">
-                    <div class="card price-info text-center">
-                      <h3>Binge</h3>
-                      <hr>
-                      <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12 price-card">
-                    <div class="card price-info text-center">
-                      <h3>VIP</h3>
-                      <p class="cost">6hr Binge<br />$20</p>
-                      <hr>
-                      <p class="cost">10hr Binge<br />$25</p>
+          <div class="collapse" id="phoenix" data-parent="#location-collapse">
+            <div class="price-categories">
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phoenixHourlyCollapse" aria-expanded="true" aria-controls="phoenixHourlyCollapse">Hourly</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phoenixBingeCollapse" aria-expanded="false" aria-controls="phoenixBingeCollapse">Binge</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phoenixBulkCollapse" aria-expanded="false" aria-controls="phoenixBulkCollapse">Bulk</button>
+              <button class="btn btn-primary global-btn" type="button" data-toggle="collapse" data-target="#phoenixAllDayCollapse" aria-expanded="false" aria-controls="phoenixAllDayCollapse">24hr Binge</button>
+            </div>
+            <div class="accordion container-fluid" id="collapsePhx">
+              <div class="row">
+                <div class="col">
+                  <div class="collapse show priceboard" id="phoenixHourlyCollapse" data-parent="#collapsePhx">
+                    <div class="row justify-content-sm-center">
+                      <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
+                        <div class="card price-info text-center d-flex">
+                          <h3 class="flex-fill">Standard</h3>
+                          <p class="cost flex-fill">$5/hr</p>
+                          <hr>
+                          <p class="flex-fill">Intel i5 7<sup>th</sup> Gen</p>
+                          <hr>
+                          <p class="flex-fill">16GM RAM</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">NVIDIA GTX 1070</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">BenQ 24" esports 240hz xl's</p>
+                          <hr class="flex-fill">
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+
+                      </div>
+                      <div class="col-md-5 col-xs-10 price-card d-flex flex-column justify-content-center">
+                        <div class="card price-info text-center d-flex">
+                          <h3 class="flex-fill">VIP</h3>
+                          <p class="cost flex-fill">$8/hr</p>
+                          <hr>
+                          <p class="flex-fill">Intel i7 7<sup>th</sup> Gen</p>
+                          <hr>
+                          <p class="flex-fill">16GM RAM</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">NVIDIA RTX 2070</p>
+                          <hr class="flex-fill">
+                          <p class="flex-fill">BenQ 27" 2K esports 144hz xl's</p>
+                          <hr class="flex-fill">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="collapse priceboard" id="bulkCollapse" data-parent="#collapseTest">
-                <div class="row">
-                  <div class="col-md-4 col-xs-12 price-card">
-                    <div class="card price-info text-center">
-                      <h3>Standard</h3>
-                      <p class="cost">6hr Bulk<br />$20</p>
-                      <hr>
-                      <p class="cost">10hr Bulk<br />$25</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12 price-card price-card-center">
-                    <div class="card price-info text-center">
-                      <h3>Bulk</h3>
-                      <hr>
-                      <p class="descriptor">Bulk time starts from the moment you login & expires after a full 24hrs. This means that the timer will continue only if you are logged on, but will still expire if time isn't used by the end of the 24hrs from log on.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12 price-card">
-                    <div class="card price-info text-center">
-                      <h3>VIP</h3>
-                      <p class="cost">6hr Bulk<br />$25</p>
-                      <hr>
-                      <p class="cost">10hr Bulk<br />$30</p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="phoenixBingeCollapse" data-parent="#collapsePhx">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">6hr Binge<br />$15</p>
+                          <hr>
+                          <p class="cost">10hr Binge<br />$20</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>Binge</h3>
+                          <hr>
+                          <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>VIP</h3>
+                          <p class="cost">6hr Binge<br />$22</p>
+                          <hr>
+                          <p class="cost">10hr Binge<br />$27</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="collapse priceboard" id="allDayCollapse" data-parent="#collapseTest">
-                <div class="row justify-content-sm-center">
-                  <div class="col-md-4 col-xs-12 price-card">
-                    <div class="card price-info text-center">
-                      <h3>Standard</h3>
-                      <p class="cost">Mon - Thur<br />$40</p>
-                      <hr>
-                      <p class="cost">Thur - Sun<br />$45</p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="phoenixBulkCollapse" data-parent="#collapsePhx">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">6hr Bulk<br />$20</p>
+                          <hr>
+                          <p class="cost">10hr Bulk<br />$25</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>Bulk</h3>
+                          <hr>
+                          <p class="descriptor">Bulk time starts from the moment you login & expires after a full 24hrs. This means that the timer will continue only if you are logged on, but will still expire if time isn't used by the end of the 24hrs from log on.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>VIP</h3>
+                          <p class="cost">6hr Bulk<br />$27</p>
+                          <hr>
+                          <p class="cost">10hr Bulk<br />$32</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-xs-12 price-card price-card-center">
-                    <div class="card price-info text-center">
-                      <h3>24hr Binge</h3>
-                      <hr>
-                      <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-xs-12 price-card text-center">
-                    <div class="card price-info">
-                      <h3>VIP</h3>
-                      <p class="cost">Mon - Thur<br />$45</p>
-                      <hr>
-                      <p class="cost">Thur - Sun<br />$50</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse priceboard" id="phoenixAllDayCollapse" data-parent="#collapsePhx">
+                    <div class="row justify-content-sm-center">
+                      <div class="col-md-4 col-xs-12 price-card">
+                        <div class="card price-info text-center">
+                          <h3>Standard</h3>
+                          <p class="cost">Mon - Thur<br />$40</p>
+                          <hr>
+                          <p class="cost">Thur - Sun<br />$45</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card price-card-center">
+                        <div class="card price-info text-center">
+                          <h3>24hr Binge</h3>
+                          <hr>
+                          <p class="descriptor">Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 price-card text-center">
+                        <div class="card price-info">
+                          <h3>VIP</h3>
+                          <p class="cost">Mon - Thur<br />$47</p>
+                          <hr>
+                          <p class="cost">Thur - Sun<br />$52</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
