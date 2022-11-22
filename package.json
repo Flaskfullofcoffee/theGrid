@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Flaskfullofcoffee/theGrid#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "concurrently": "^4.1.0",
     "node-sass": "^4.11.0"
   },
